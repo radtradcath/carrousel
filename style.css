@@ -8,9 +8,11 @@ body {
 
 .carousel {
   display: flex;
+  transition: transform 300ms ease-in-out;
 }
 
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,6 +23,33 @@ body {
   align-self: center;
   width: 500px;
   overflow: hidden;
+}
+
+.prev {
+  position: fixed;
+  top: 50%;
+  right: 70%;
+  z-index: 50;
+}
+
+.next {
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  z-index: 50;
+}
+
+
+.bullet-points {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.bullet-points button {
+  padding: 15px;
+  border-radius: 50%;
 }
 
 header, footer {
